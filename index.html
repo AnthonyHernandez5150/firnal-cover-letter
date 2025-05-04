@@ -2,59 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cover Letter - Anthony Hernandez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Hernandez – Cover Letter</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background: #f4f4f9;
-      padding: 30px;
-      color: #222;
+    :root {
+      --bg: #f4f4f9;
+      --text: #222;
+      --accent: #0077ff;
+      --font: 'Segoe UI', sans-serif;
     }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
     .container {
       max-width: 700px;
-      margin: auto;
-      background: white;
-      border-radius: 8px;
       padding: 40px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease;
     }
+
     h1 {
-      color: #1a73e8;
-      font-size: 28px;
-      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 2em;
+      color: var(--accent);
     }
+
     p {
-      font-size: 16px;
+      margin: 1em 0;
     }
+
     .signature {
-      margin-top: 30px;
+      margin-top: 2em;
       font-weight: bold;
     }
+
     .contact {
-      color: #555;
-      font-size: 14px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Dear Firnal Hiring Team,</h1>
-    <p>
-      I saw your posting and didn’t even blink — I had to shoot my shot. Firnal’s mission grabbed my attention, and I knew I wanted in.
-    </p>
-    <p>
-      I’m a self-taught, battle-tested developer who’s been building full-stack apps in the wild with tools like Python, React Native, Flask, SQL, and GitHub. I’ve integrated APIs, wrangled CSS, deployed Flask backends, and handled version control like a boss. All while juggling life in the jungle — literally.
-    </p>
-    <p>
-      You want a doer? Someone who learns fast, adapts faster, and isn’t afraid to take on real problems? That’s me. I’m not just sending resumes — I’m coming in hot with working projects, real GitHub repos, and a hunger to make things better.
-    </p>
-    <p>
-      I’d love the chance to prove I can contribute to Firnal. Let’s make something incredible together.
-    </p>
+    <p>I saw your posting and didn’t even blink. I had to shoot my shot. Firnal’s mission grabbed my attention, and I knew I wanted in.</p>
+    <p>I’m a real-world-tested developer who’s been building full-stack apps in the wild with tools like Python, React Native, Flask, CI/CD pipelines, and a whole toolbox of others.</p>
+    <p>You want a doer? Someone who learns fast, adapts faster, and isn’t afraid to tackle real-world problems? That’s me. I’m not just looking for a job, I’m hunting for a mission that hits hard, and Firnal feels like the one.</p>
+    <p>I’d love the chance to prove I can contribute. Let’s make something incredible together.</p>
     <p class="signature">Anthony Hernandez</p>
-    <p class="contact">📍 Currently remote • 💻 GitHub: AnthonyHernandez5150 • 🧠 Learned the hard way</p>
+    <p class="contact">🌍 Remote • 💻 GitHub: <a href="https://github.com/AnthonyHernandez5150" target="_blank">AnthonyHernandez5150</a> • 🍄 Learned the hard way</p>
   </div>
 </body>
 </html>
+
